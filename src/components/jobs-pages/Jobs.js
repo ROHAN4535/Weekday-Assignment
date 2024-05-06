@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
-import JobList from "../jobs-pages/JobList";
 import { useDispatch } from "react-redux";
 import {fetchJobs} from "../store/jobsSlice";
+import JobFilters from "../jobs-pages/JobFilters";
+import { Typography } from "@mui/material";
 
 const Jobs = () => {
   const dispatch = useDispatch();
@@ -9,11 +10,22 @@ const Jobs = () => {
 
   useEffect(() => {
     dispatch(fetchJobs());
+    return;
   }, [dispatch]);
+
   return (
     <div>
-      <h1>Jobs</h1>
-      <JobList />
+      <Typography variant="h4" style={{
+          display: "flex",
+          justifyContent: "center",
+          paddingBottom: "20px",
+          fontWeight: "bold",
+          paddingTop: "15px",
+        }}
+      >
+        Candidate Application Platform
+      </Typography>
+      <JobFilters />
     </div>
   );
 };

@@ -1,14 +1,19 @@
 import React from "react";
-import { useSelector } from "react-redux";
 import JobCard from "./JobCard";
 import { Grid } from "@mui/material";
 
-const JobList = () => {
-  const jobs = useSelector((state) => state.jobs.jobs);
+const JobList = ({ jobs, filterRole, filterLocation, filterExperience }) => {
+  const filterJobs = (job) => {
+    return (
+      job.jobRole.toLowerCase().includes(filterRole.toLowerCase()) &&
+      job.location.toLowerCase().includes(filterLocation.toLowerCase()) &&
+      job.minExp?.toString().includes(filterExperience)
+    );
+  };
 
   return (
     <Grid container spacing={8}>
-      {jobs.map((job, index) => (
+      {jobs.filter(filterJobs).map((job, index) => (
         <Grid
           item
           key={`${job.jdUid}-${job.location}-${index}`}
