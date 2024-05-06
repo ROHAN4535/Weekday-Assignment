@@ -1,70 +1,49 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Candidate Application Platform
 
-## Available Scripts
+This project is submitted as an assignment for the SDE 1 role at Weekday. It replicates the Job Search section of Weekday's Chrome extension, allowing users to search for jobs based on their preferences and filters.
 
-In the project directory, you can run:
 
-### `npm start`
+## Setup and Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To begin with the Weekday Project, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1.Open your terminal or command prompt on your computer.
 
-### `npm test`
+2.Navigate to the directory where you want to clone the repository. You can do this using the cd command followed by the directory path. For example: cd path/to/your/directory
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3.Once in the desired directory, clone the repository using the following command: 
 
-### `npm run build`
+git clone https://github.com/R0HAN4535/WeekdayAssignment.git
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4.Press Enter. Git will start cloning the repository to your local machine.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5.After the cloning process is complete, navigate into the cloned directory using the cd command and Install the required dependencies by running the following command and Once the dependencies are installed, start the React server by running:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+  cd WeekdayAssignment
+  npm install
+  npm start
+```
+    
+## Features
 
-### `npm run eject`
+- Dynamic Job Listings: Job data is fetched from an external API, ensuring up-to-date listings.
+- Filtering Options: Users can filter jobs by role, location, and experience level, streamlining their search process.
+- Detailed Job Cards: Each job listing showcases vital information such as company name, role, location, salary range, experience requirements, and a concise job description.
+- Effortless Application: Prominent "Easy Apply" buttons swiftly direct users to external job application links.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
+- Filter Role: use the textbox to filter the jobs according to the roles.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Filter Location: use the textbox to filter the jobs according to the location.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Filter Experience: use the textbox to filter the jobs according to the experience levels.
 
-## Learn More
+- Easy Apply: Use Easy Apply button to get directed to the external link to apply for the job
+## Contact
+- Rohan Gaikwad
+- Email: grohan468@gmail.com
+- Contact No: +91 9082148891
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
